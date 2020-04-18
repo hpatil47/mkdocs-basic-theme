@@ -14,8 +14,5 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-#      pip install -U wheel
-#      pip install tornado
-#      pip install mkdocs
        pip list
   displayName: 'installing required packages'
