@@ -7,12 +7,12 @@ trigger:
 - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'windows'
 
 steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
     script: |
-       pip list
+       mkdocs serve
   displayName: 'installing required packages'
