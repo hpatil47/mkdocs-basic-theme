@@ -7,7 +7,7 @@ steps:
    mkdocs serve  
   displayName: Install the MkDocs + do a build
 
-- task: AzureFileCopy@2
+- task: AzureFileCopy@4
   displayName: AzureBlob File Copy
   inputs:
     SourcePath: site
