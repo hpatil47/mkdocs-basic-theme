@@ -7,11 +7,4 @@ steps:
    mkdocs build  
   displayName: Install the MkDocs + do a build
 
-- task: AzureFileCopy@2
-  displayName: AzureBlob File Copy
-  inputs:
-    SourcePath: site
-    azureSubscription: Pay-As-You-Go
-    Destination: azureblobstorageaccount
-    storage: harrystorage2020
-    ContainerName: '$web'
+
