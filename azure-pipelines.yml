@@ -11,7 +11,7 @@ steps:
   displayName: AzureBlob File Copy
   inputs:
     SourcePath: site
-    azureSubscription: 7b5d73a6-e1a1-4faa-a156-e53b718610cc
-    Destination: azureblobstorageaccount
+    azureSubscription: $(ID)
+    Destination: $(storageaccount)
     storage: harrystorage2020
     ContainerName: '$web'
