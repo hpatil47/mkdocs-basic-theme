@@ -19,4 +19,10 @@ steps:
       pip install tornado
       pip install mkdocs
       pip list
-  displayName: 'Run mkdocs project'
+  displayName: 'installing required packages'
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |    
+      mkdocs serve
+  displayName: 'building the mkdocs project'
