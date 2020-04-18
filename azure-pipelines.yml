@@ -4,7 +4,7 @@ queue:
 steps:
 - script: |
    pip install mkdocs
-   mkdocs serve  
+   mkdocs build  
   displayName: Install the MkDocs + do a build
 
 - task: AzureFileCopy@4
