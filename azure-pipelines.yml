@@ -11,6 +11,11 @@ pool:
 
 steps:
 - script: |
-    pip install mkdocs
-    mkdocs serve
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: |
+      # Write your commands here
+      
+      pip install mkdocs
   displayName: 'Run mkdocs project'
