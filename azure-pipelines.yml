@@ -11,6 +11,6 @@ pool:
 
 steps:
 - script: |
-    pip list
+    pip install mkdocs
 #    mkdocs serve
   displayName: 'Run mkdocs project'
