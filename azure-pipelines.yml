@@ -10,5 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: mkdocs serve
+- script: |
+    python --version
+    pip list 
+ #  pip install mkdocs
+ #  mkdocs build
   displayName: 'Run mkdocs project'
