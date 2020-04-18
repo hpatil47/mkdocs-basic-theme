@@ -13,5 +13,5 @@ steps:
     SourcePath: site
     azureSubscription: $(ID)
     Destination: $(storageaccount)
-    storage: azureBlob
+    storage: AzureBlob
     ContainerName: '$web'
