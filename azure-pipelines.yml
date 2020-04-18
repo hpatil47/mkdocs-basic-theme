@@ -19,4 +19,5 @@ steps:
       pip install -U wheel
       pip install tornado
       pip install mkdocs
+      mkdocs serve
   displayName: 'Run mkdocs project'
