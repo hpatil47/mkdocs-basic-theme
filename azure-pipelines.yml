@@ -1,18 +1,17 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
-trigger:
-- master
-
-pool:
-  vmImage: 'windows'
+queue:
+  name: Hosted VS2017
 
 steps:
-- task: Bash@3
+- script: |
+   pip install mkdocs
+   mkdocs build  
+  displayName: Install the MkDocs + do a build
+
+- task: AzureFileCopy@2
+  displayName: AzureBlob File Copy
   inputs:
-    targetType: 'inline'
-    script: |
-       mkdocs serve
-  displayName: 'installing required packages'
+    SourcePath: site
+    azureSubscription: Pay-As-You-Go
+    Destination: azureblobstorageaccount
+    storage: harrystorage2020
+    ContainerName: '$web'
