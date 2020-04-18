@@ -13,6 +13,6 @@ steps:
 - script: |
     python --version
     pip list 
- #  pip install mkdocs
- #  mkdocs build
+    pip install mkdocs
+    mkdocs serve
   displayName: 'Run mkdocs project'
