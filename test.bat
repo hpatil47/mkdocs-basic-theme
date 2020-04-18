@@ -1,1 +1,2 @@
 python --version
+mkdocs serve
