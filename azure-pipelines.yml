@@ -3,7 +3,6 @@ queue:
 
 steps:
 - script: |
-   pip install mkdocs
-   mkdocs build  
+   pip list  
   displayName: Install the MkDocs + do a build
 
